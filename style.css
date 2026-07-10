@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.box ul li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+}
+.box ul li a {
+  text-decoration: none;
+}
+
+.common-btn {
+  background-color: rgb(25, 25, 203);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.common-btn:hover {
+  background-color: rgb(33, 93, 177);
+  color: rgb(48, 48, 49);
+}
+
+/* Hero section */
+
+.hero-section-container {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./media/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  padding: 220px;
+}
+
+.hero-section-container button {
+  margin-top: 70px;
+}
+.hero-section-container h1 {
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+/* Meet the Speakers */
+
