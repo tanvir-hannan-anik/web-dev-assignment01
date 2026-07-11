@@ -11,12 +11,12 @@
   padding: 10px;
 }
 
-.box ul li {
+.box ul .nav-link {
   list-style: none;
   display: inline;
   padding: 10px;
 }
-.box ul li a {
+a {
   text-decoration: none;
 }
 
@@ -25,6 +25,14 @@
   color: white;
   padding: 10px 20px;
   border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.oposite-btn {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(25, 25, 203);
+  color: rgb(25, 25, 203);
+  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -61,40 +69,111 @@
   text-align: center;
   margin-top: 20px;
 }
-.meet-the-speakers h1{
-    padding: 10px;
+.meet-the-speakers h1 {
+  padding: 10px;
 }
 .meet-the-speakers-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding:0 110px;
+  padding: 0 110px;
   gap: 20px;
+  margin-bottom: 20px;
 }
 
 .info-card {
-  border: 1.5px solid rgb(73, 71, 71);
+  border: 2px solid rgb(73, 71, 71);
   padding-bottom: 10px;
   text-align: left;
   border-radius: 5px;
-  box-shadow: 2px 20px 20px black;
 }
 
-
-.info-card img{
-    padding-bottom: 10px;
+.info-card img {
+  padding-bottom: 10px;
 }
-.info-card .name,.into-title,.info{
-    padding-left: 15px;
-}
-
-.info-card .into-title{
-    color: skyblue;
-    font-size: small;
+.info-card .name,
+.into-title,
+.info {
+  padding-left: 15px;
 }
 
-.info-card .info{
-    color: rgb(91, 89, 89);
+.info-card .into-title {
+  color: skyblue;
+  font-size: small;
 }
 
+.info-card .info {
+  color: rgb(91, 89, 89);
+}
 
-/*  */
+/* secure-your-spot */
+.secure-your-spot .spot-head,
+.spot-title {
+  text-align: center;
+}
+.secure-your-spot .spot-title {
+  margin-bottom: 40px;
+}
+.secure-your-spot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.price-card {
+  background-color: azure;
+  border: 2px solid rgb(160, 157, 157);
+  border-radius: 10px;
+  padding: 30px 50px;
+}
+.price-card-oposite{
+  background-color: rgb(62, 61, 61);
+  color: white;
+  border: 2px solid rgb(160, 157, 157);
+  border-radius: 10px;
+  padding: 30px 50px;
+}
+
+.price-card-oposite button {
+  text-align: center;
+  margin: 50px 50px 0px 50px;
+}
+.price-card button{
+   text-align: center;
+  margin: 50px 50px 0px 50px;
+}
+.price-card-head,.price-card-head-ops {
+  padding-bottom: 20px;
+}
+
+.price-card-head p{
+  color: darkgray;
+}
+.price-card-head h3{
+  font-size: 50px;
+}
+.price-card-head-ops .card-title{
+color: rgb(45, 45, 249);
+font-weight: 700;
+}
+.price-card-head-ops h3{
+  font-size: 50px;
+}
+/* Footer */
+
+.fotter-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:40px ;
+  padding: 50px 100px;
+  background-color: #0D1B2A;
+  color: aliceblue;
+}
+
+.fotter-container a{
+  color: aliceblue;
+}
+.policy a{
+  padding: 20px;
+}
