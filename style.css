@@ -150,8 +150,8 @@ a {
   border-radius: 10px;
   padding: 30px 50px;
   flex: 1;
-  display:flex;
-flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
 
 .price-card-oposite button {
@@ -181,12 +181,13 @@ flex-direction:column;
   font-size: 50px;
 }
 
-hr{
+hr {
   border: none;
   height: 1px;
   background-color: #ddd;
   margin: 20px 0;
 }
+
 /* Footer */
 
 .fotter-container {
@@ -194,7 +195,7 @@ hr{
   justify-content: space-around;
   align-items: center;
   margin-top: 40px;
-  padding: 50px 100px;
+  padding: 50px 90px;
   background-color: #0d1b2a;
   color: aliceblue;
 }
@@ -204,4 +205,116 @@ hr{
 }
 .policy a {
   padding: 20px;
+}
+
+.social a {
+  padding: 20px;
+}
+.social {
+  margin-bottom: 10px;
+}
+
+/* Past Highlights Gallery */
+
+.past-highlights {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.past-highlights h2 {
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 250px;
+  gap: 15px;
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.item-large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.item-small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+  .gallery-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+  }
+
+  .item-large {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .item-small {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 180px;
+    gap: 12px;
+  }
+
+  .item-large {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .item-small {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+    gap: 10px;
+  }
+
+  .item-large,
+  .item-small {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .past-highlights h2 {
+    font-size: 28px;
+  }
 }

@@ -1,0 +1,1 @@
+Without changing any exicting code . you make a gellary design in the past-highlights section.first give a heading name "Past Highlights" then Use grid atribute for this design and use image in media con1 to con7 for design this gellary . make this gellary responsive . Also make this design like one image is small and another is large and cover small space this type .
