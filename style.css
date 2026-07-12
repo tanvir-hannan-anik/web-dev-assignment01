@@ -135,8 +135,7 @@ a {
 }
 
 .price-card {
-  background-color: azure;
-  border: 2px solid rgb(160, 157, 157);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
   padding: 30px 50px;
   flex: 1;
@@ -146,7 +145,7 @@ a {
 .price-card-oposite {
   background-color: rgb(62, 61, 61);
   color: white;
-  border: 2px solid rgb(160, 157, 157);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
   padding: 30px 50px;
   flex: 1;
